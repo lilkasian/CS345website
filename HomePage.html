@@ -62,14 +62,17 @@
 	        	<div class="banner col-md-4-"><h3>View your favourites here</h3></div>
 
 	    	</div>
-	    	<div class="row livefeeds">
+	    	<div class="row">
 	    		
 		        	<div class="col-md-3"> 
 		        		<!--Keep blank for Navigation Bar-->
 		        	</div>
 					<!--Live Security Feed Starts Here-->
+				<section>
+
 		        	<div class="col-md-3">
-						<h5>Front Door</h5>
+
+						<h5>Front Door Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
 					      <img class="activator" src="frontdoor.jpg" height="300" width="300">
@@ -86,7 +89,7 @@
 					  </div>
 					</div>
 					<div class="col-md-3">
-						<h5>Kitchen</h5>
+						<h5>Kitchen Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
 					      <img class="activator" src="kitchen.jpg" height="300" width="300">
@@ -101,7 +104,7 @@
 					  </div>
 					</div>
 					<div class="col-md-3">
-						<h5>Living Room</h5>
+						<h5>Living Room Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
 					      <img class="activator" src="livingroom.jpg" height="300" width="300">
@@ -115,6 +118,7 @@
 					    </div>
 					  </div>
 					</div>
+				</section>
 					<!--Live Security Feed Ends Here-->
 
 	        	<div class="logs col-md-2"></div>
@@ -259,7 +263,133 @@
 	            	</div>
 	        	</div>
 	        	
-	        	<div class="security col-md-3"></div>
+	        	<div class="security col-md-3">
+	        		<div class="panel panel-default">
+					  	<div class="panel-heading">Security Locks</div>
+					  	<div class="panel-body">
+					  		<a href="#" onclick="ShowTable('doors'); return false;"><b>Entrances</b></a>
+					  		<br><br>
+					  		<table id="doors">
+					  			<tr>
+					  				<td>Front Door </td>
+					  				<td>
+					  					<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+					  			</tr>
+								<tr>
+									<td>Back Door</td>
+									<td>
+									    <label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+								<tr>
+									<td>Veranda Sliding Door</td>
+									<td>
+										<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+						  	</table>
+						  	<br>
+						  	<a href="#" onclick="ShowTable('garagedoor'); return false;"><b>Garage</b></a>
+						  	<br><br>
+						  	<table id="garagedoor" style="display:none;">
+					  			<tr>
+					  				<td>Garage Door 1</td>
+					  				<td>
+					  					<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+					  			</tr>
+								<tr>
+									<td>Garage Door 2</td>
+									<td>
+									    <label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+						  	</table>
+						  	<br>
+						  	<a href="#" onclick="ShowTable('bedroomdoors'); return false;"><b>Bedrooms</b></a>
+						  	<br><br>
+						  	<table id="bedroomdoors" style="display:none;">
+					  			<tr>
+					  				<td>Master Bedroom</td>
+					  				<td>
+					  					<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+					  			</tr>
+								<tr>
+									<td>Guest Bedroom 1</td>
+									<td>
+									    <label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+								<tr>
+									<td>Guest Bedroom 2</td>
+									<td>
+										<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+						  	</table>
+						  	<br>
+						  	<a href="#" onclick="ShowTable('recreationroomdoor'); return false;"><b>Recreation Room</b></a>
+						  	<br><br>
+						  	<table id="recreationroomdoor" style="display:none;">
+					  			<tr>
+					  				<td>Cinema Room Door</td>
+					  				<td>
+					  					<label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+					  			</tr>
+								<tr>
+									<td>Games Room Door</td>
+									<td>
+									    <label class="switch">
+									      <input type="checkbox" class="switch-input" checked>
+									      <span class="switch-label" data-on="On" data-off="Off"></span>
+									      <span class="switch-handle"></span>
+									    </label>
+									</td>
+								</tr>
+						  	</table>
+						</div>
+	            	</div>
+
+	        	</div>
 	       
 		  
 
