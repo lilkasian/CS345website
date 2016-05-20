@@ -12,7 +12,7 @@
       	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="CSS/style.css">
 		
 		<!--Show Table-->
 		<script type="text/javascript">
@@ -26,8 +26,9 @@
 		  else {
 		    document.getElementById(id).style.display = "none";
 		  }
-
 		}
+
+
 		</script>
 	</head>
 	<body>
@@ -35,8 +36,21 @@
 
 			<div class="row headings">
 
-	        	<div class="xyz col-md-4"><h1>XYZ</h1>
-	        		<!--Start Nagivation-->
+	        	<div class="xyz col-md-2">
+	        		<a href="HomePage.html">
+	        			<img src="Images/XYZ_final.png" width="180px" height="200px"></img>
+	        		</a>	
+	        				
+	        	</div>
+				
+	        	<div class="banner col-md-8"><h3 align="center">View your favourites here</h3></div>
+	        	<div class="col-md-2">
+	        		<h4 align="right">log out <a href ="#"> <span class="glyphicon glyphicon-log-out"></span></h4></a>
+	        	</div>
+
+	    	</div>
+	    	<div class="row" id="navigation">
+	    		<!--Start Nagivation-->
 					<nav class="navbar ">
 				        <div class="navbar-header">
 				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,45 +58,40 @@
 				                <span class="icon-bar"></span>
 				                <span class="icon-bar"></span>
 
+
 				            </button>
 				        </div>
 
 				        <div class="collapse navbar-collapse">
 				            <ul class="nav nav-stacked">
-				                <li class="active"><a href="HomePage.html">DashBoard</a></li>
-				                <li><a href="#">Account Settings </a></li>
-				                <li><a href="#">Logs</a></li>
-				                <li><a href="#">Log Out</a></li>              
+				                <li><a href="HomePage.html">DashBoard <i class="glyphicon glyphicon-home pull-right"></i></a></li>
+				                <li><a href="AccountSettings.html">Account Settings <span class="glyphicon glyphicon-user pull-right"></span></a></li>
+				                <li><a href="Logs.html">Logs <span class="glyphicon glyphicon-list-alt"></span></a></li>
+				                <li><a href="#">Log Out <span class="glyphicon glyphicon-log-out"></span></a></li>              
 				            </ul>
 				        </div><!-- /.navbar-collapse -->
 				    </nav>
-				    <!--End of Navigation sidebar-->		
-	        	</div>
-				
-	        	<div class="banner col-md-4-"><h3>View your favourites here</h3></div>
-
+				    <!--End of Navigation sidebar-->
 	    	</div>
 	    	<div class="row">
-	    		
-		        	<div class="col-md-3"> 
-		        		<!--Keep blank for Navigation Bar-->
-		        	</div>
+		        	 
+		        	<!--Keep blank for Navigation Bar-->
+		        	<div class="col-md-3"></div>
 					<!--Live Security Feed Starts Here-->
-				<section>
-
-		        	<div class="col-md-3">
+					<section>
+					<div class="col-md-3">
 
 						<h5>Front Door Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
-					      <img class="activator" src="frontdoor.jpg" height="300" width="300">
+					      <img class="activator" src="Images/frontdoor.jpg" height="300" width="300">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
 					    </div>
 					    <div class="card-reveal">
 					      <span class="card-title grey-text text-darken-4">Front Door<i class="material-icons right">X</i></span>
-					      <img src="frontdoor.jpg">
+					      <img src="Images/frontdoor.jpg" width="250" height="200">
 					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
 
 					    </div>
@@ -92,7 +101,7 @@
 						<h5>Kitchen Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
-					      <img class="activator" src="kitchen.jpg" height="300" width="300">
+					      <img class="activator" src="Images/kitchen.jpg" height="300" width="300">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
@@ -107,7 +116,7 @@
 						<h5>Living Room Video Feed</h5>
 		        		<div class="card ">
 					    <div class="card-livevideofeeds">
-					      <img class="activator" src="livingroom.jpg" height="300" width="300">
+					      <img class="activator" src="Images/livingroom.jpg" height="300" width="300">
 					    </div>
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
@@ -119,6 +128,7 @@
 					  </div>
 					</div>
 				</section>
+
 					<!--Live Security Feed Ends Here-->
 
 	        	<div class="logs col-md-2"></div>
@@ -127,7 +137,7 @@
 	        	<div class="col-md-3"></div>
 	        	<!--Lighting section-->
 	        	<div class="Lights col-md-3">
-					<div class="panel panel-default">
+					<div class="panel">
 					  	<div class="panel-heading">Lighting</div>
 					  	<div class="panel-body">
 					  		<a href="#" onclick="ShowTable('bedrooms'); return false;"><b>Bedrooms</b></a>
@@ -264,7 +274,7 @@
 	        	</div>
 	        	
 	        	<div class="security col-md-3">
-	        		<div class="panel panel-default">
+	        		<div class="panel">
 					  	<div class="panel-heading">Security Locks</div>
 					  	<div class="panel-body">
 					  		<a href="#" onclick="ShowTable('doors'); return false;"><b>Entrances</b></a>
@@ -395,6 +405,32 @@
 
 
 
-		</div>
+		<div class="logs col-md-3">
+			<div class="panel" height="300">
+				<div class="panel-heading">Logs</div>
+					<div class="panel-body">
+						<table id="logs">
+							<tr>
+								<td>Front Door unlocked.
+								<br>
+								<i>~18 minutes ago</i>
+								</td>
+							</tr>
+							<tr>
+								<td>Movement detected at Front Door.
+								<br>
+								<i>~20 minutes ago</i>
+								</td>
+							</tr>
+							<tr>
+								<td>Movement detected at Front Gate.
+								<br>
+								<i>~24 minutes ago</i>
+								</td>
+							</tr>
+						</table>
+					</div>
+			</div>
+		</div> 
 	</body>
 </html>

@@ -1,7 +1,7 @@
 /*CSS for Navigation sidebar*/
 
     nav {
-      background-color: #fff;
+      background-color: #afcfce;
       box-shadow: none !important;
     }
 
@@ -10,32 +10,60 @@
         margin: 0;
         padding: 0;
         width: 20%;
-        background-color: #f1f1f1;
+        background-color: #afcfce; 
         height: relative; 
         position: fixed; /* Make it stick, even on scroll */
         overflow: auto; /* Enable scrolling if the sidenav has too much content */
+        font-style: black;
     }
     li {
         text-align: center;
-        border-bottom: 1px solid #555;
+        
+        border-bottom: 1px solid #368979 !important;
+        border-right: 1px solid #368979 !important;
+        border-left: 1px solid #368979 !important;
+        border-top:1px solid #368979 !important;
+        background-color: #afcfce;
     }
 
     li a {
         display: block;
-        color: #000;
+        color: black !important;
         padding: 8px 0 8px 16px;
         text-decoration: none;
     }
 
     /* Change the link color on hover */
-    li a:hover {
-        background-color: #555;
-        color: white;
+    li :hover {
+        background-color:#99b6a0 !important; /*#99b6a0*/
     }
-    .active {
-        background-color: #4CAF50;
-        color: white;
+    li.active {
+        background-color: #368979!important;
     }
+
+    /*Body*/
+    body {
+      background-color:#afcfce;
+    }
+    
+    /*Override Bootstrap*/
+
+    #navigation {
+      height: 0px;
+    }
+
+    /*Panels*/
+
+    .panel {
+      border-color:#368979;
+
+    }
+    
+    .panel-heading {
+      border-color:#368979;
+      
+    }
+
     /*Cards*/
 
     .card {
@@ -180,8 +208,7 @@ a {
   color:#000000;
 }
 a:hover {
-    background-color: lightgreen;
-    color:#000000;
+    color:none;
 }
 
 a:visited {
