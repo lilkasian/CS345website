@@ -1,16 +1,22 @@
 /*CSS for Navigation sidebar*/
 
     nav {
-      background-color: #afcfce;
+      background-color: #d9eaf1;
       box-shadow: none !important;
+    }
+
+    .glyphicon {
+     text-align: center;
+     font-size: 2em; 
+     margin-top: 0.5em;
     }
 
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
-        width: 20%;
-        background-color: #afcfce; 
+        right-padding: 0;
+        width: 15%;
+        background-color: #d9eaf1; 
         height: relative; 
         position: fixed; /* Make it stick, even on scroll */
         overflow: auto; /* Enable scrolling if the sidenav has too much content */
@@ -19,11 +25,11 @@
     li {
         text-align: center;
         
-        border-bottom: 1px solid #368979 !important;
-        border-right: 1px solid #368979 !important;
-        border-left: 1px solid #368979 !important;
-        border-top:1px solid #368979 !important;
-        background-color: #afcfce;
+        border-bottom: 2px solid #368979 !important;
+        border-right:2px solid #368979 !important;
+        border-left: 2px solid #368979 !important;
+        border-top:2px solid #368979 !important;
+        background-color: #d9eaf1;
     }
 
     li a {
@@ -43,7 +49,7 @@
 
     /*Body*/
     body {
-      background-color:#afcfce;
+      background-color:#d9eaf1; /*#afcfce*/
     }
     
     /*Override Bootstrap*/
@@ -55,12 +61,17 @@
     /*Panels*/
 
     .panel {
-      border-color:#368979;
+      border-bottom: 2px solid #368979 !important;
+        border-right:2px solid #368979 !important;
+        border-left: 2px solid #368979 !important;
+        border-top:2px solid #368979 !important;
 
     }
     
     .panel-heading {
-      border-color:#368979;
+      border-color:#368979 !important; 
+      border-bottom: 2px solid;
+      font-size:14px;
       
     }
 
@@ -215,3 +226,6 @@ a:visited {
   text-decoration:none !important;
   color:#000000;
 }
+
+/*Glyphicon cogs*/
+
