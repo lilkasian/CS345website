@@ -39,7 +39,7 @@
         text-decoration: none;
     }
 
-    /* Change the link color on hover */
+/* Change the link color on hover */
     li :hover {
         background-color:#99b6a0 !important; /*#99b6a0*/
     }
@@ -47,18 +47,18 @@
         background-color: #368979!important;
     }
 
-    /*Body*/
+/*Body*/
     body {
       background-color:#d9eaf1; /*#afcfce*/
     }
     
-    /*Override Bootstrap*/
+/*Override Bootstrap*/
 
     #navigation {
       height: 0px;
     }
 
-    /*Panels*/
+/*Panels*/
 
     .panel {
       border-bottom: 2px solid #368979 !important;
@@ -75,7 +75,13 @@
       
     }
 
-    /*Cards*/
+    .panel-heading b{
+      font-size:18px;
+      color: black;
+      
+    }
+
+/*Cards*/
 
     .card {
       width:300px;
@@ -83,13 +89,29 @@
       margin: 0;
     }
 
-    /*Override materialize css*/
+/*Override materialize css*/
     [type="checkbox"]+label:before {
       content: none;
     }
     [type="checkbox"]+label {
     padding-left:0px;
     }
+
+/*Button on cards*/
+  #start {
+    width:120px;
+    height:30px !important;
+    font-size: 12px;
+    box-shadow: none;
+    float:left;
+  }
+
+  #stop {
+    width:120px;
+    height:30px !important;
+    font-size: 12px;
+    box-shadow: none;
+  }
 
 /*Switch*/
 
@@ -229,3 +251,32 @@ a:visited {
 
 /*Glyphicon cogs*/
 
+.panel-body b{
+  vertical-align: bottom;
+  line-height: 30px;
+  position: relative;
+
+}
+
+.glyphicon.glyphicon-cog {
+  vertical-align: text-top;
+  margin-top: 1%
+}
+
+/*Glyphicon logout*/
+
+button {
+  height:80px !important;
+  background-color:#d9eaf1 !important; 
+  box-shadow: none !important;
+  padding: opx;
+  outline: none !important; 
+
+}
+
+
+.glyphicon.glyphicon-log-out {
+  color:black;
+  font-size: 3em;
+  margin-top: 1%;
+}

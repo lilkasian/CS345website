@@ -13,6 +13,7 @@
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		
 		<link rel="stylesheet" href="CSS/style.css">
+
 		
 		<!--Show Table-->
 		<script type="text/javascript">
@@ -29,6 +30,14 @@
 		}
 
 
+
+		</script>
+
+		<script language="javascript" type="text/javascript">
+			function windowClose() {
+			window.open('','_parent','');
+			window.close();
+			}
 		</script>
 	</head>
 	<body>
@@ -45,7 +54,9 @@
 				
 	        	<div class="banner col-md-8"><h3 align="center">View your favourites here</h3></div>
 	        	<div class="col-md-2">
-	        		<h5 align="right"><a href ="#"> <span class="glyphicon glyphicon-log-out"></span></h5></a>
+	        		<h5 align="right"><button type="button" class="btn" onclick="windowClose();">
+					  <span class="glyphicon glyphicon-log-out"></span> 
+					</button> </h5>
 	        	</div>
 
 	    	</div>
@@ -202,7 +213,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('recreationroom'); return false;"><b>Recreation Room</b></a>
+						  	<a href="#" onclick="ShowTable('recreationroom'); return false;"><b text-align="center">Recreation Room<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="recreationroom" style="display:none;">
 					  			<tr>
@@ -237,7 +248,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('livingroom'); return false;"><b>Living Room</b></a>
+						  	<a href="#" onclick="ShowTable('livingroom'); return false;"><b text-align="center">Living Room<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="livingroom" style="display:none;">
 					  			<tr>
@@ -272,7 +283,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('garage'); return false;"><b>Garage</b></a>
+						  	<a href="#" onclick="ShowTable('garage'); return false;"><b text-align="center">Garage<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="garage" style="display:none;">
 					  			<tr>
@@ -302,9 +313,9 @@
 	        	
 	        	<div class="security col-md-3">
 	        		<div class="panel">
-					  	<div class="panel-heading">Security Locks</div>
+					  	<div class="panel-heading"><b>Security Locks</b></div>
 					  	<div class="panel-body">
-					  		<a href="#" onclick="ShowTable('doors'); return false;"><b>Entrances</b></a>
+					  		<a href="#" onclick="ShowTable('doors'); return false;"><b text-align="center">Entrances<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 					  		<br><br>
 					  		<table id="doors" style="display:none;">
 					  			<tr>
@@ -339,7 +350,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('garagedoor'); return false;"><b>Garage</b></a>
+						  	<a href="#" onclick="ShowTable('garagedoor'); return false;"><b text-align="center">Garage<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="garagedoor" style="display:none;">
 					  			<tr>
@@ -364,7 +375,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('bedroomdoors'); return false;"><b>Bedrooms</b></a>
+						  	<a href="#" onclick="ShowTable('bedroomdoors'); return false;"><b text-align="center">Bedrooms<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="bedroomdoors" style="display:none;">
 					  			<tr>
@@ -399,7 +410,7 @@
 								</tr>
 						  	</table>
 						  	<br>
-						  	<a href="#" onclick="ShowTable('recreationroomdoor'); return false;"><b>Recreation Room</b></a>
+						  	<a href="#" onclick="ShowTable('recreationroomdoor'); return false;"><b text-align="center">Recreation Room<i class="glyphicon glyphicon-cog pull-right"></i></b></a>
 						  	<br><br>
 						  	<table id="recreationroomdoor" style="display:none;">
 					  			<tr>
@@ -434,7 +445,7 @@
 
 		<div class="logs col-md-3">
 			<div class="panel" height="300">
-				<div class="panel-heading">Logs</div>
+				<div class="panel-heading"><b>Logs</b></div>
 					<div class="panel-body">
 						<table id="logs">
 							<tr>
